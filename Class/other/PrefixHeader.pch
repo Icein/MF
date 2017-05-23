@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  MF
+//
+//  Created by admin on 2017/5/22.
+//  Copyright © 2017年 admin. All rights reserved.
+//
+
+
+#ifdef DEBUG
+#define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define DLog(...)
+#endif
+#define kScreentWidth   [UIScreen mainScreen].bounds.size.width
+#define kScreentHeight  [UIScreen mainScreen].bounds.size.height
+#define kRGB(r,g,b)     [UIColor colorWithRed:(r) / 255.0 green:(g)/ 255.0 blue:(b)/255.0 alpha:1]
+#define kRGBA(r,g,b,a)  [UIColor colorWithRed:(r) / 255.0 green:(g)/ 255.0 blue:(b)/255.0 alpha:(a) / 255.0]
+#import "UIImage+MFExtension.h"
+//#import <>
+#import "UIColor+MFExtension.h"
+#define kScaleFrom_iPhone6s_Desgin(_X_) (_X_ * (kScreentHeight/667))

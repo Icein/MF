@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Images" rowHeight="137" id="KGk-i7-Jjw" customClass="MFImagesCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="137"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M3G-NO-0cJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DxS-tV-MkH">
+                                <rect key="frame" x="0.0" y="10" width="76" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="    热门视频">
+                                    <color key="titleColor" red="0.20784313725490194" green="0.20784313725490194" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNh-nz-QJB">
+                                <rect key="frame" x="252" y="16.5" width="60" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Ydp-pe-XlL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="49" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="更多" image="common_icon_arrow_highlighted">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yQe-5i-v1Q">
+                                <rect key="frame" x="0.0" y="18" width="4" height="15"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="htW-iR-0zN"/>
+                                    <constraint firstAttribute="width" constant="4" id="ou4-XP-kDV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DxS-tV-MkH" firstAttribute="centerY" secondItem="M3G-NO-0cJ" secondAttribute="centerY" id="AaG-Bd-4RK"/>
+                            <constraint firstAttribute="height" constant="50" id="Rp4-CE-cWQ"/>
+                            <constraint firstItem="qNh-nz-QJB" firstAttribute="centerY" secondItem="M3G-NO-0cJ" secondAttribute="centerY" id="ZyI-fg-24n"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qNh-nz-QJB" secondAttribute="trailing" id="hyM-T9-HB0"/>
+                            <constraint firstItem="DxS-tV-MkH" firstAttribute="leading" secondItem="M3G-NO-0cJ" secondAttribute="leading" id="qsK-Qf-3ul"/>
+                            <constraint firstItem="yQe-5i-v1Q" firstAttribute="centerY" secondItem="M3G-NO-0cJ" secondAttribute="centerY" id="uOo-HZ-jC9"/>
+                            <constraint firstItem="yQe-5i-v1Q" firstAttribute="leading" secondItem="M3G-NO-0cJ" secondAttribute="leading" id="uR0-bK-chL"/>
+                        </constraints>
+                    </view>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="JEy-Ve-aTa">
+                        <rect key="frame" x="0.0" y="50" width="320" height="76.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Yff-Lc-pSQ">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="JEy-Ve-aTa" firstAttribute="top" secondItem="M3G-NO-0cJ" secondAttribute="bottom" id="D9L-85-iBx"/>
+                    <constraint firstAttribute="trailing" secondItem="JEy-Ve-aTa" secondAttribute="trailing" id="UIh-lp-GUL"/>
+                    <constraint firstItem="JEy-Ve-aTa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YwJ-8f-Kz9"/>
+                    <constraint firstAttribute="trailing" secondItem="M3G-NO-0cJ" secondAttribute="trailing" id="bkA-4Q-S5X"/>
+                    <constraint firstItem="M3G-NO-0cJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="eKR-5b-2cp"/>
+                    <constraint firstItem="M3G-NO-0cJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="tfk-HT-V6S"/>
+                    <constraint firstAttribute="bottom" secondItem="JEy-Ve-aTa" secondAttribute="bottom" constant="10" id="ugy-Uj-AtL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="JEy-Ve-aTa" id="XFJ-2j-xG2"/>
+                <outlet property="moreButton" destination="qNh-nz-QJB" id="eiC-VQ-AVJ"/>
+                <outlet property="titleButton" destination="DxS-tV-MkH" id="NKG-we-Rzw"/>
+            </connections>
+            <point key="canvasLocation" x="-264" y="-77"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="common_icon_arrow_highlighted" width="12" height="12"/>
+    </resources>
+</document>
